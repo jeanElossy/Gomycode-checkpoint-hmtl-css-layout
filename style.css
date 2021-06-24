@@ -147,10 +147,11 @@ animation: anim1 5s infinite ease-in-out;
 }
 .active{
   height: 200px;
-  background: var(--color1);
+  /* background: var(--color1); */
   margin-right: 25px;
   cursor: pointer;
   transition: .6s ease-in-out;
+  border: 1px solid rgb(230, 228, 228);
 }
 .active:hover{
    background: linear-gradient(135deg, var(--color1) 0% var(--color2) 100%);
