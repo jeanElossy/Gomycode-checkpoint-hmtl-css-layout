@@ -6,104 +6,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="shortcut icon" href="MEDIA/Gomycode-logo.PNG">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>PROJET-GOMYCODE</title>
+    <title>PROJET-GOMYCODE-CSS-LAYOUT</title>
   </head>
   <body>
-    <div class="container">
-      <!--le premier block -->
+    <div class="container-g">
+      <!--En-tête -->
       <header>
-        <!--le logo de mon site-->
-        <div class="web-logo">Wilseloo_Dev</div>
         <!--le menu de navigation de mon site-->
         <nav>
-          <!--je suis dev-->
           <ul>
             <li><a href="#">A-propos</a></li>
             <li><a href="#">Profil</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+        <!--le logo de mon site-->
+        <div class="web-logo">
+          <p>Wilseloo_Dev</p> 
+        </div>
       </header>
-      <!--le deuxieme block-->
-      <section>
-        <div class="presentation">
+    </div>
+      <!--le premier block-->
+      <section class="conatiner-1">
+        <div class="contents">
           <!--Nom, prenom et Formation-->
-          <div class="description">
+          <div class="content-1">
             <h1>Ayegnon <br>Willy</h1>
             <p>Fullstack JS Development Student.</p>
             <button>Contactez-moi</button>
           </div>
           <!--La mise en valeur de ma photo-->
-          <div class="icon">
-            <div class="icon-1">
-              <div class="icon-2">
-              <!--Insertion de l'image dans le css-->
-            </div>
+          <div class="content-2">
+            <div class="content-2-1">
+              <div class="content-2-2">
+                <div class="content-2-2-1">
+               <!--image le-will-->
+                </div>
+              </div>
             </div>
           </div>     
         </div>
       </section>
-       <!--le troisieme block-->
-      <section>
-        <div class="picture-2">
+
+      
+
+       <!--le deuxieme block-->
+      <section class="container-2">
+        <div class="contents-2-img">
           <!--les 4 images de Go my code-->
           <img class="img-1" src="MEDIA/go.gif" alt="Logo Go my code">
           <img class="img-2" src="MEDIA/go.gif" alt="Logo Go my code">
           <img class="img-3" src="MEDIA/go.gif" alt="Logo Go my code">
           <img class="img-4" src="MEDIA/go.gif" alt="Logo Go my code">
-         </div> 
-      </section> 
-       <!--le quatrieme block-->
-      <section>
-        <div class="container-2">
+         </div>
+
+        
+        <div class="contents-g">
           <div class="exprerience">
             <h1>2+</h1>
             <p>Année <br> d'experience de <br> travail</p>
           </div>
           <div class="activity">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Maiores, consectetur?</h3>
-            <div class="contents">
-              <div class="content-1 active">
-                <i></i>
-                <h4>Product Designer</h4>
+            <div class="box-container">
+              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Maiores, consectetur?</h3>
+              <div class="contents-icon">
+                <div class="box-icon-1 box-1">
+                  <div class="icon-text">
+                    <span>
+                      <i class="fas fa-drafting-compass"></i>
+                    </span>
+                    <h4 id="title-1">Product Designer</h4>
+                    <p id="para-1">Découvrir plus</p>
+                  </div>
+                </div>
+                <div class="box-icon-1 box-2">
+                  <div class="icon-text">
+                    <span>
+                    <i class="fas fa-bolt"></i>
+                    </span> 
+                    <h4>Product Designer</h4>
+                  </div>
+                </div>
+                <div class="box-icon-1 box-3">
+                  <div class="icon-text">
+                    <span>
+                      <i class="fas fa-desktop"></i>
+                    </span> 
+                    <h4>Product Designer</h4>
+                  </div>
+                </div>
               </div>
-              <div class="content-2">
-                <i></i>
-                <h4>Product Designer</h4>
-              </div>
-              <div class="content-3">
-                <i></i>
-                <h4>Product Designer</h4>
               </div>
             </div>
           </div>
-        </div>
-        <div class="info">
-          <div class="lorem-2">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Labore, voluptatibus?</p>
+        </section>
+        <div class="container-g">
+          <div class="info">
+            <div class="article-1">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Labore, voluptatibus?</p>
+            </div>
+            <div class="article-2">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <p id="icon-f"><a href="#">Explore more <i class="fas fa-arrow-right"></i></a></p>
+            </div>
           </div>
-          <div class="artcile">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <p>Veuillez me suivre <i></i></p>
+        </div>
+     
+        <section></section>
+        <div class="contents-img-tech">
+            <div class="content-img-tech"><img height="200" src="./MEDIA/bg1.jpg" alt="image-tech"></div>
+            <div class="content-img-tech"><img height="200" src="./MEDIA/bg2.jpg" alt="image-tech"></div>
+            <div class="content-img-tech"><img height="200" src="./MEDIA/bg3.jpg" alt="image-tech"></div>
+            <div class="content-img-tech"><img height="200" src="./MEDIA/bg4.jpg" alt="image-tech"></div>
+            <div class="content-img-tech"><img height="200" src="./MEDIA/bg5.jpg" alt="image-tech"></div>
+            <div class="content-img-tech"><img height="200" src="./MEDIA/bg6.jpg" alt="image-tech"></div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="container-3">
-          <div class="box-1"></div>
-          <div class="box-2"></div>
-          <div class="box-3"></div>
-          <div class="box-4"></div>
-          <div class="box-5"></div>
-          <div class="box-6"></div>
-        </div>
-      </section>
-      
-    </div>
+        </section>
+        
+        <section>
+          <div class="img-wilseloo">
+            <img src="./MEDIA/manette.png" height="450" alt="Une manette de jeux ">
+            <div>
+              <h2>Bienvenue chez wilseloo...</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iusto voluptas saepe quae 
+                velit inventore, repellat dolor cum qui accusantium dignissimos quod vel quia totam eligendi. 
+                Possimus eos harum laudantium excepturi suscipit rerum nemo sit magnam numquam magni. 
+                Expedita hic libero labore iure tenetur, odio cumque eos fugit ad vitae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam cumque ullam a.
+                <br /><br /> 
+                Provident perspiciatis velit adipisci quibusdam ipsa rerum aperiam odio inventore vel consequatur fugiat, 
+                earum asperiores, nam non assumenda dolorem ducimus? Fugiat magnam id odio aspernatur! Corporis veritatis quae
+                mollitiaest quaerat autem exercitationem enim repellendus modi iusto.
+              </p>
+              <div class="icons">
+                <span id="icon-google-play">
+                   <a href="https://play.google.com/store/movies" target="_bank" title="Télécharger l'App"><i class="fab fa-google-play"></i></a> 
+                </span>
+                <span id="icon-app-store">
+                   <a href="https://www.apple.com/fr/ios/app-store/" target="_bank"  title="Télécharger l'App"><i class="fab fa-app-store"></i></a> 
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
+        <section class="cmt-img-text">
+          <div class="commentaire">
+            <div class="img-text"></div>
+            <div class="img-text"></div>
+            <div class="img-text"></div>
+          </div>
+        </section>
 
-    <script src="./JS/script.js"></script>
+       
+        <section class="end-1">
+          <div class="container-g end">
+            <div class="connect">
+              <h2>Let's connect</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="icons-f">
+                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-linkedin"></i></span>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+              <div class="mail">jean.elossy@gmail.com</div>
+            </div>
+            <div class="contact">
+              <h3>Ecrivez-moi et faisons quelques choses ensemble</h3>
+              <form action="/" class="myForm">
+                <input type="text" name="nom" id="nom" placeholder="Votre nom"><br />
+                <input type="email" name="email" id="email" placeholder="Votre email"><br />
+                <textarea cols="15" rows=1" placeholder="Detaillez vos sujets"></textarea><br />
+                <button type="submit">Envoyer</button>
+              </form>
+            </div>
+          </div> 
+        </section>
+         
+        <footer>
+          <p>Designed by WilsonElossy</p>
+        </footer>
+        
   </body>
 </html>
