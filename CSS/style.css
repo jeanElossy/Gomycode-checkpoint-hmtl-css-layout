@@ -2,12 +2,10 @@
   --violet : #7562E0;
   --dark : #625C7E;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -53,7 +51,6 @@ li a:hover{
   text-transform: uppercase;
   transition: all .2s ease;
 }
-
 /* ---------------------------------Block principale---------------------------------------------*/
 .contents{
   width: 100%;
@@ -128,9 +125,7 @@ li a:hover{
   border-radius: 50%;
   border: 10px solid white;
 }
-
 /*-----------------------Deuxeime block--------------------*/
-
 .container-2{
   position: relative;
   width: 100%;
@@ -157,13 +152,11 @@ li a:hover{
   height: 300px;
   top: 30%;
   display: flex;
-  /* background: #d0eef35d; */
   margin-left: 150px;
   margin-right: 50px;
 }
 .exprerience{
   width: 12%;
-  
 }
 .exprerience h1{
   font-size: 6em;
@@ -186,7 +179,6 @@ li a:hover{
   color: var(--violet);
   font-family: 'Montserrat', sans-serif;
 }
-
 /* le style des trois icons*/
 .contents-icon{
   display: flex;
@@ -229,7 +221,6 @@ li a:hover{
   visibility: hidden;
   margin-top: 20px;
 }
-
  /*le hover sur le box--icon--1*/
 .box--icon--1:hover{
   background: var(--violet);
@@ -249,7 +240,6 @@ li a:hover{
   color: white;
   font-family: 'Montserrat', sans-serif !important;
 }
-
 /*---------------------------------------------------------------------------------------------------------*/
 .info{
   display: flex;
@@ -274,7 +264,6 @@ li a:hover{
 #icon-f a{
   color: var(--violet);
 }
-
 /*the slider*/
 .container--slider{
   display: flex;
@@ -370,12 +359,11 @@ li a:hover{
   text-align: center;
   font-size: 1.2em;
   color: #414243;
+  margin-top: 35px;
 }
 .fa-quote-left{
    font-size: 0.5em;
  }
-
-
 /*-------------------------------------------------------*/
 .img-wilseloo{
   width: 100%;
@@ -408,7 +396,6 @@ li a:hover{
    color: var(--violet);
    padding-bottom: 10px;
 }
-
 #icon-google-play i{
   font-size: 2em;
   cursor: pointer;
@@ -459,7 +446,6 @@ li a:hover{
 .icons-f{
   margin-top: 30px;
 }
-
 .fab{
   font-size: 2.2em;
   color: #7e7e7e;
@@ -503,7 +489,6 @@ textarea{
    border: 1px solid #5c5d5e80;
   transition: all .3s ease;
 }
-
 input::placeholder{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -540,7 +525,6 @@ textarea:focus{
   border: 1px solid #111416;
   box-shadow: none;
 }
-
 footer{
   width: 100%;
   height: 50px;
@@ -548,7 +532,6 @@ footer{
   color: antiquewhite;
   background: #111416;
 }
-
 footer p{
   padding-top: 15px;
   font-weight: bold;
