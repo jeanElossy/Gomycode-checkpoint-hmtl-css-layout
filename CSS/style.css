@@ -3,14 +3,10 @@
   --dark : #625C7E;
 }
 
-/* @font-face {
-  font-family: "font-1";
-  src: url(../font/Roboto-Regular.ttf);
-} */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 
 *{
   margin: 0;
@@ -25,7 +21,7 @@ body{
 .container-g{
   margin-top: 0px;
   margin-left: 135px;
-  margin-right: 50px;
+  margin-right: 100px;
   margin-bottom: 0px;
 }
 /* ---------------------------------En-tête---------------------------------------------*/
@@ -178,25 +174,11 @@ li a:hover{
 .exprerience p{
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
+  color: #414243;
 }
 .activity{
   width: 88%;
   margin-left: 100px;
-}
-.contents-icon{
-  display: flex;
-  margin-top: 50px;
-}
-.box-icon-1{
-  width: 21.5%;
-  height: 230px;
-  font-family: 'Montserrat', sans-serif;
-  margin-right: 30px;
-  background: white;
-  box-shadow: 0px 0px 10px rgba(90, 89, 89, 0.3);
-  border-radius: 7px;
-  transition: all .2s ease;
-  
 }
 .box-container h3{
   font-size: 1.8em;
@@ -204,56 +186,71 @@ li a:hover{
   color: var(--violet);
   font-family: 'Montserrat', sans-serif;
 }
-.icon-text p{
-    visibility: hidden;
-}
-@keyframes anim1{
-  0%{
-    top: 0%;
-    transform: translateY(0%);
-  }
-  100%{
-    top: 10%;
-    transform: translateY(-10%);
-  }
-}
-/* @keyframes anim2{
-  0%{
-    visibility: hidden;
-    opacity: 0;
-  }
-  100%{
-    visibility: visible;
-    opacity: 1;
-  }
-} */
 
-.box-icon-1 .icon-text{
-  padding: 100px 30px;
+/* le style des trois icons*/
+.contents-icon{
+  display: flex;
+  margin-top: 50px;
 }
-
-.box-icon-1:hover{
-  background: rgba(158, 97, 243, 0.446);
-
-}
-
-.icon-text:hover{
-  /* visibility: visible; */
-  animation: anim1 .3s ease;
-}
-.icon-text i{
-  color: var(--violet);
-  font-size: 2em;
+/*la config du box--icon--1*/
+.box--icon--1{
+  width: 23%;
+  height: 230px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 30px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(90, 89, 89, 0.3);
+  border-radius: 7px;
+  transition: all .3s ease;
+  margin-right: 10px;
   margin-bottom: 20px;
-  
+  padding: 30px;
+  position: relative;
 }
-
-.icon-text h4{
-  font-family: 'Roboto', sans-serif;
+.box--icon--1 div{
+  position: absolute;
+  bottom: 20px; 
+}
+.box--icon--1 div i{
   color: var(--violet);
-  font-size: 1.2em;
+  font-size: 30px;
+  transition: all 1s ease-in-out;
+}
+.box--icon--1 div h4{
+  color: var(--violet);
+  font-size: 20px;
+  margin-top: 10px;
+  transition: all .3s ease-in-out;
+}
+.box--icon--1 div a{
+  color: white;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
 }
 
+ /*le hover sur le box--icon--1*/
+.box--icon--1:hover{
+  background: var(--violet);
+}
+.box--icon--1:hover div i{
+ transform: rotateY(360deg); 
+  color: white;
+  font-size: 2em;
+}
+.box--icon--1:hover div h4{
+  margin-bottom: 20px;
+  color: white;
+}
+.box--icon--1:hover div a{
+  visibility: visible;
+  opacity: 1;
+  color: white;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
 .info{
   display: flex;
   justify-content: space-between;
@@ -266,9 +263,10 @@ li a:hover{
 .article-2{
   font-size: 1.2em;
   font-family: 'Roboto', sans-serif;
+  color: #414243;
 }
-.article-2 p{
-  margin-top: 20px;
+.article-2 #icon--f {
+  margin-top: 40px;
 }
 #icon-f{
   font-size: 0.9em;
@@ -276,42 +274,156 @@ li a:hover{
 #icon-f a{
   color: var(--violet);
 }
-/* .content-img-tech{
-  width: 200px;
-  height: 200px;
-} */
+
+/*the slider*/
+.container--slider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.content--slide{
+  width: 31%;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.18);
+  margin-bottom: 20px;
+  margin-right: 10px; 
+}
+.content--slide img{
+  width: 100%;
+  object-fit: cover;
+  transition: all 3s ease-in-out;
+}
+.content--slide:hover img{
+  transform: translateY(-50%);
+}
+/*the block cmt-img-text*/
+.commet--g{
+  width: 100%;
+  height: 450px;
+  background: #e4e2f031;
+}
+.commentaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img--text{
+  width: 31%;
+  height: 300px;
+  border: 1px solid #ccc;
+  background: white;
+  box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.18);
+  margin-right: 20px;
+  position: relative;
+  border-radius: 7px;
+  transition: all .5s ease-in-out;
+  margin-top: 70px;
+}
+.img--text--im--1{
+  background: url(../MEDIA/1.jpg) center/cover;
+  border-radius: 50%;
+  border: 4px solid var(--violet);
+  height: 80px;
+  object-fit: cover;
+  width: 23%;
+  margin: 10px auto;
+}
+.img--text--im--2{
+  background: url(../MEDIA/2.jpg) center/cover;
+  border-radius: 50%;
+  border: 4px solid var(--violet);
+  height: 80px;
+  object-fit: cover;
+  width: 23%;
+  margin: 10px auto;
+}
+.img--text--im--3{
+   background: url(../MEDIA/3.jpg) center/cover;
+  border-radius: 50%;
+  border: 4px solid var(--violet);
+  height: 80px;
+  object-fit: cover;
+  width: 23%;
+  margin: 10px auto;
+}
+.img--text .fa-quote-right{
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 4em;
+  color: #625c7e21;
+  transition: all .2s ease-in-out;
+}
+.img--text:hover{
+  transform: scale(1.03);
+}
+.img--text:hover .fa-quote-right{
+  color: var(--violet);
+  transform: scale(1.1);
+}
+ .text--commet p{
+  text-align: center;
+  font-size: 1.2em;
+  color: #414243;
+}
+.fa-quote-left{
+   font-size: 0.5em;
+ }
 
 
+/*-------------------------------------------------------*/
 .img-wilseloo{
-  margin-top: 100px;
+  width: 100%;
+  margin-top: 60px;
   display: flex;
 }
+.game--picture{
+  width: 60%;
+  margin-right: 40px;
+}
+.game--picture img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.inf--text{
+  width: 40%;
+}
+.inf--text h2, p, .icons{
+  width: 100%;
+}
 .img-wilseloo p{
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Roboto', sans-serif;
+  color: #414243;
 }
 .img-wilseloo h2{
    font-family: 'Roboto', sans-serif;
-   font-size: 1.8;
+   font-size: 1.8em;
    color: var(--violet);
    padding-bottom: 10px;
 }
 
 #icon-google-play i{
-  font-size: 4em;
-  margin-right: 5px;
+  font-size: 2em;
   cursor: pointer;
   color: #111416;
   transition: all .3s ease-in-out;
 }
 #icon-app-store i{
-  font-size: 4em;
+  font-size: 2em;
   color: #111416;
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
 .icons{
-  margin: 30px 250px;
+  text-align: center;
+  margin-top: 45px;
 }
 #icon-app-store a i:hover{
   color: rgba(51, 126, 224, 0.871);
@@ -326,15 +438,13 @@ li a:hover{
   margin-top: 10px;
 }
 .end-1{
-   display: flex;
-   margin-top: 50px;
+  display: flex;
   width: 100%;
   height: 450px;
   background: rgba(247, 237, 237, 0.398);
 }
 .connect{
   margin-right: 100px;
-
 }
 .connect p{
   font-family: 'Montserrat', sans-serif;
@@ -379,7 +489,7 @@ input{
   margin-bottom: 10px;
   border-radius: 6px;
   outline: none;
-  border: 1px solid #414243;
+  border: 1px solid #5c5d5e80;
   transition: all .3s ease;
 }
 textarea{
@@ -390,7 +500,7 @@ textarea{
   resize: none;
   border-radius: 6px;
   outline: none;
-  border: 1px solid #414243;
+   border: 1px solid #5c5d5e80;
   transition: all .3s ease;
 }
 
