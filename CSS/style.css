@@ -16,9 +16,9 @@ body{
   height: 100vh;
   overflow-x: hidden;
 }
-.container-g{
+.container--g{
   margin-top: 0px;
-  margin-left: 135px;
+  margin-left: 160px;
   margin-right: 100px;
   margin-bottom: 0px;
 }
@@ -26,7 +26,6 @@ body{
 header{
  margin: 20px;
  font-size: 1.5em;
- /* font-family: font-1, "sans-serif"; */
  font-family: 'Montserrat', sans-serif;
 }
 ul {
@@ -94,7 +93,6 @@ li a:hover{
 .content-2{
   width: 45%;
   height: 550px;
-  /* background: url(../MEDIA/bloc1.svg); */
   margin-top: 70px;
   transform: rotate(45deg);
 }
