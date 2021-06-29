@@ -479,10 +479,9 @@ input{
   transition: all .3s ease;
 }
 textarea{
-  padding: 1.1rem 6rem;
-   text-align: center;
+  padding: 1.1rem 8rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   resize: none;
   border-radius: 6px;
   outline: none;
@@ -490,9 +489,8 @@ textarea{
   transition: all .3s ease;
 }
 input::placeholder{
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 input:focus{
   border-color: var(--violet);
@@ -503,7 +501,6 @@ input:focus{
 }
 textarea:focus{
   border-color: var(--violet);
-  text-align: center;
   color: #7562E0;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
